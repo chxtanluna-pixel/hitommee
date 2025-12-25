@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitPassword = document.getElementById('submitPassword');
 
     submitPassword.addEventListener('click', function() {
+        if (passwordInput.value.toLowerCase() === 'Hamilton') {
             passwordModal.style.opacity = '0';
             setTimeout(() => {
                 passwordModal.style.display = 'none';
@@ -81,7 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     addFloatingElements();
-
 });
-
-
